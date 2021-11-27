@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4566464657006345641}
   - component: {fileID: 3404902277481182093}
   - component: {fileID: 2129872762287121811}
-  - component: {fileID: 1020348573780015244}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -97,25 +96,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1020348573780015244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734407513447278811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee9fa57e76b5269478d73252952ce050, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  bulletSpeed: 6
-  bulletReload: 2
-  bulletPrefab: {fileID: 3855111126208671322, guid: 215958ff5262caf48a4efeaa4dc15701, type: 3}
-  bulletOrigin: {fileID: 2158955148862898926}
-  speed: 3
-  ignorarEjeY: 1
 --- !u!1 &2200554510434381870
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +110,7 @@ GameObject:
   - component: {fileID: 3408872097110774538}
   - component: {fileID: 393960995919097133}
   - component: {fileID: 1977375236786848554}
+  - component: {fileID: 7945530242102518519}
   m_Layer: 0
   m_Name: Shooter
   m_TagString: Untagged
@@ -241,6 +222,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  speed: 3
+  ignorarEjeY: 1
+--- !u!114 &7945530242102518519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2200554510434381870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811607cebcd2d3944b2d4b90af62bb6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  bulletSpeed: 6
+  bulletReload: 2
+  bulletPrefab: {fileID: 3855111126208671322, guid: 215958ff5262caf48a4efeaa4dc15701, type: 3}
+  bulletOrigin: {fileID: 2158955148862898926}
   speed: 3
   ignorarEjeY: 1
 --- !u!1 &4954469449350897984
